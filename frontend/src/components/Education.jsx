@@ -1,18 +1,20 @@
-// src/components/Skills.jsx
+// src/components/Education.jsx
 
 import React from 'react';
-import skills from '../skillsData';
+import education from '../educationData';
 
-const Skills = () => {
+const Education = () => {
   return (
-    <section id="skills" style={styles.section}>
+    <section id="education" style={styles.section}>
       <div style={styles.container}>
-        <h2 style={styles.heading}>Skills</h2>
-        <div style={styles.skillsList}>
-          {skills.map((skill, index) => (
+        <h2 style={styles.heading}>Education</h2>
+        <div style={styles.educationList}>
+          {education.map((edu, index) => (
             <div key={index} style={styles.card}>
-              <h3 style={styles.cardTitle}>{skill.name}</h3>
-              <p style={styles.cardDescription}>{skill.description}</p>
+              <h3 style={styles.cardTitle}>{edu.degree}</h3>
+              <h4 style={styles.cardInstitution}>{edu.institution}</h4>
+              <p style={styles.cardYear}>{edu.year}</p>
+              <p style={styles.cardDescription}>{edu.description}</p>
             </div>
           ))}
         </div>
@@ -36,7 +38,7 @@ const styles = {
     fontSize: '2.5rem',
     color: '#333',
   },
-  skillsList: {
+  educationList: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
     gap: '20px',
@@ -52,11 +54,20 @@ const styles = {
     marginBottom: '10px',
     color: '#333',
   },
+  cardInstitution: {
+    fontSize: '1.25rem',
+    marginBottom: '10px',
+    color: '#555',
+  },
+  cardYear: {
+    fontSize: '1rem',
+    marginBottom: '10px',
+    color: '#777',
+  },
   cardDescription: {
     fontSize: '1rem',
-    marginBottom: '15px',
     color: '#666',
   },
 };
 
-export default Skills;
+export default Education;

@@ -1,6 +1,9 @@
+// src/App.jsx
+
 import React from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
+import Education from './components/Education';
 import Header from './components/Header';
 import Hobbies from './components/Hobbies';
 import Projects from './components/Projects';
@@ -14,6 +17,7 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
+      <Education />
       <Resume />
       <Hobbies />
       <Contact />
