@@ -1,0 +1,24 @@
+import React from 'react';
+import About from './components/About';
+import Contact from './components/Contact';
+import Header from './components/Header';
+import Hobbies from './components/Hobbies';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
+import Skills from './components/Skills';
+
+const App = () => {
+  return (
+    <div>
+      <Header />
+      <About />
+      <Skills />
+      <Projects />
+      <Resume />
+      <Hobbies />
+      <Contact />
+    </div>
+  );
+};
+
+export default App;
