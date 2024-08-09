@@ -1,28 +1,8 @@
 // src/components/Contact.jsx
 
-import React, { useState } from 'react';
+import React from 'react';
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const response = await fetch('http://localhost:5000/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ name, email, message }),
-    });
-    const data = await response.json();
-    alert(data.message);
-    setName('');
-    setEmail('');
-    setMessage('');
-  };
-
   return (
     <section id="contact" style={styles.section}>
       <div style={styles.container}>
@@ -35,13 +15,16 @@ const Contact = () => {
           <p>Phone: <a href="tel:+917869782173" style={styles.link}>+91-7869782173</a></p>
           <p>LinkedIn: <a href="https://www.linkedin.com/in/-shikhar-singh/" target="_blank" rel="noopener noreferrer" style={styles.link}>View Profile</a></p>
         </div>
-        <form onSubmit={handleSubmit} style={styles.form}>
+        <form 
+          action="https://formspree.io/f/xpwarrlp" 
+          method="POST" 
+          style={styles.form}
+        >
           <div style={styles.formGroup}>
             <label style={styles.label}>Name</label>
             <input 
               type="text" 
-              value={name} 
-              onChange={(e) => setName(e.target.value)} 
+              name="name"
               required 
               style={styles.input} 
             />
@@ -50,8 +33,7 @@ const Contact = () => {
             <label style={styles.label}>Email</label>
             <input 
               type="email" 
-              value={email} 
-              onChange={(e) => setEmail(e.target.value)} 
+              name="email"
               required 
               style={styles.input} 
             />
@@ -59,8 +41,7 @@ const Contact = () => {
           <div style={styles.formGroup}>
             <label style={styles.label}>Message</label>
             <textarea 
-              value={message} 
-              onChange={(e) => setMessage(e.target.value)} 
+              name="message"
               required 
               style={styles.textarea} 
             ></textarea>
