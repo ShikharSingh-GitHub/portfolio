@@ -7,6 +7,12 @@ const education = [
         year: '2022 - 2024',
         description: 'Focused on software development, data structures, and algorithms. Gained experience in full-stack development and participated in various technical projects.',
       },
+      {
+        course: 'Union Public Service Commission, Civil Services Exam(UPSC CSE) Aspirant',
+        institution: 'Vajiram and Ravi, New Delhi',
+        year: '2018 - 2022',
+        description: "Learnt about the Social Sciences like History, Polity, Geography, Art and Culture, Geopolitics, Ethics and Morality, Sociology, Current Affairs while preparing for one of the world's toughest Exams.",
+      },
     {
       course: 'Bachelor of Engineering in Information Technology',
       institution: 'Medicaps Institute of Science and Technology, Indore',
