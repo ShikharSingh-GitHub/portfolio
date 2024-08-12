@@ -1,75 +1,203 @@
 // src/skillsData.js
 
 const skills = [
-    {
-      name: 'React',
-      description: 'Proficient in building dynamic and responsive user interfaces using React. Experienced in managing state with Redux and enhancing performance with React hooks and context API.',
-    },
-    {
-      name: 'NodeJS',
-      description: 'Skilled in server-side development using NodeJS. Capable of creating scalable backend services and RESTful APIs, with a focus on performance and security.',
-    },
-    {
-      name: 'ExpressJS',
-      description: 'Experienced in building robust web applications and APIs with ExpressJS, leveraging middleware for request handling, authentication, and routing.',
-    },
-    {
-      name: 'MongoDB',
-      description: 'Proficient in using MongoDB for managing NoSQL databases. Skilled in designing flexible schemas, optimizing queries, and implementing CRUD operations.',
-    },
-    {
-      name: 'JavaScript',
-      description: 'Strong command of JavaScript, with deep understanding of ES6+ features, asynchronous programming, and functional programming concepts.',
-    },
-    {
-      name: 'Redux',
-      description: 'Experienced in state management using Redux. Skilled in structuring large-scale applications with Redux and managing side effects with Thunk middleware.',
-    },
-    {
-      name: 'Thunk',
-      description: 'Adept at handling asynchronous actions in Redux applications using Thunk, improving data flow management and enhancing user experience.',
-    },
-    {
-      name: 'Git',
-      description: 'Proficient in version control using Git. Experienced in managing codebases, collaborating with teams, and following best practices for branching and merging.',
-    },
-    {
-      name: 'Data Structures and Algorithms (DSA)',
-      description: 'Strong problem-solving skills, with experience in solving 500+ DSA problems. Proficient in optimizing algorithms and data structures for performance.',
-    },
-    {
-      name: 'Low-Level Design (LLD)',
-      description: 'Knowledgeable in designing software components with a focus on scalability, maintainability, and reusability. Skilled in creating detailed class diagrams and design patterns.',
-    },
-    {
-      name: 'High-Level Design (HLD)',
-      description: 'Experienced in creating architectural blueprints for complex systems. Proficient in designing system architecture that meets performance, scalability, and reliability requirements.',
-    },
-    {
-      name: 'SQL',
-      description: 'Proficient in writing and optimizing SQL queries. Experienced in database design, normalization, and managing relational databases.',
-    },
-    {
-      name: 'HTML',
-      description: 'Skilled in crafting semantic and accessible web pages using HTML. Strong understanding of web standards and best practices for structuring content.',
-    },
-    {
-      name: 'CSS',
-      description: 'Experienced in styling web pages with CSS, including responsive design, layout techniques (Flexbox, Grid), and pre-processors like SASS.',
-    },
-    {
-      name: 'Product Management',
-      description: 'Knowledgeable in product lifecycle management, from ideation to deployment. Skilled in defining product requirements, managing backlogs, and working cross-functionally to deliver successful products.',
-    },
-    {
-      name: 'DevOps',
-      description: 'Familiar with DevOps practices, including CI/CD pipelines, containerization with Docker, and cloud deployments. Understanding of the importance of collaboration between development and operations teams.',
-    },
-    {
-      name: 'Data Engineering',
-      description: 'Currently learning data engineering concepts, with a focus on ETL pipelines, data processing, and big data technologies.',
-    },
-  ];
-  
-  export default skills;
-  
+  {
+    name: 'React',
+    description: [
+      'Component based Architecture',
+      'Virtual DOM',
+      'JSX (Javascript XML)',
+      'React Hooks',
+      'State and Props',
+      'HTTP and useEffect',
+      'Client side Routing and React Router',
+      'Pagination Sorting, Searching, filtering',
+      'Prop drilling and State management'
+    ],
+  },
+  {
+    name: 'NodeJS',
+    description: [
+      'Node.js Core Modules',
+      'Node.js Package Management',
+      'Asynchronous Programming',
+      'Building Web Servers',
+      'Express.js Framework',
+      'Interacting with Databases',
+      'Real-Time Applications with Socket.io',
+      'Authentication and Authorization',
+      'File Handling and Streams',
+      'Testing in Node.js',
+      'Deploying Node.js Applications',
+      'Node.js Security Best Practices'
+
+    ],
+  },
+  {
+    name: 'ExpressJS',
+    description: [
+      'Creating a Basic Express.js Server',
+      'Routing in Express.js',
+      'Middleware in Express.js',
+      'Templating Engines',
+      'Handling Forms and Data',
+      'Building RESTful APIs',
+      'Working with Databases',
+      'Authentication and Authorization',
+      'Error Handling in Express.js',
+      'Real-Time Applications with Express.js',
+      'Express.js Security Best Practices'
+
+    ],
+  },
+  {
+    name: 'MongoDB',
+    description: [
+      'Setting Up MongoDB',
+      'MongoDB Data Model',
+      'CRUD Operations in MongoDB',
+      'Querying Data',
+      'Indexing in MongoDB',
+      'Schema Design Best Practices',
+      'Data Validation',
+      'MongoDB Security Best Practices',
+      'Backup and Restore in MongoDB',
+      'Performance Optimization',
+      'Using MongoDB with Node.js',
+      'Deploying MongoDB'
+    ],
+  },
+  {
+    name: 'JavaScript',
+    description: [
+      'Scope and Hoisting',
+      'Closures',
+      'Callbacks',
+      'Promises',
+      'Async/Await',
+      'Event Loop and Concurrency Model',
+      'DOM Manipulation',
+      'Event Handling',
+      'Modules (import/export)',
+      'Higher-Order Functions',
+      'Map, Filter, Reduce',
+      'Working with APIs',
+      'Event Delegation',
+      'Debouncing and Throttling'
+    ],
+  },
+  {
+    name: 'Redux',
+    description: [
+      'Expert in state management with Redux.',
+      'Structured large-scale applications to manage complex state.',
+      'Handled asynchronous data flows with Redux Thunk middleware.',
+    ],
+  },
+  {
+    name: 'Thunk',
+    description: [
+      'Adept at handling asynchronous actions in Redux applications using Thunk.',
+      'Improved data flow management and user experience.',
+      'Integrated API calls seamlessly within Redux state management.',
+    ],
+  },
+  {
+    name: 'Git',
+    description: [
+      'Proficient in version control using Git.',
+      'Managed codebases and collaborated with teams efficiently.',
+      'Followed best practices for branching, merging, and resolving conflicts.',
+    ],
+  },
+  {
+    name: 'DSA',
+    description: [
+      'Arrays',
+      'Linked Lists',
+      'Stacks',
+      'Queues',
+      'Trees',
+      'Graphs',
+      'Hashing',
+      'Heaps',
+      'Trie',
+      'Sorting Algorithms',
+      'Searching Algorithms',
+      'Recursion and Backtracking',
+      'Dynamic Programming',
+      'Greedy Algorithms',
+      'Divide and Conquer',
+      'Bit Manipulation',
+      'Mathematical Algorithms',
+      'String Algorithms',
+      'Graph Algorithms'
+    ],
+  },
+  {
+    name: 'LLD',
+    description: [
+      'Knowledgeable in designing scalable and maintainable software components.',
+      'Created detailed class diagrams and applied design patterns effectively.',
+      'Focused on building modular and reusable code.',
+    ],
+  },
+  {
+    name: 'HLD',
+    description: [
+      'Proficient in creating architectural blueprints for complex systems.',
+      'Ensured performance, scalability, and reliability in system design.',
+      'Experienced in designing system interactions and data flow.',
+    ],
+  },
+  {
+    name: 'SQL',
+    description: [
+      'Experienced in writing and optimizing SQL queries.',
+      'Designed and normalized relational databases for efficient data management.',
+      'Handled complex joins, indexing, and query optimization.',
+    ],
+  },
+  {
+    name: 'HTML',
+    description: [
+      'Skilled in crafting semantic and accessible web pages using HTML.',
+      'Strong understanding of web standards and best practices for structuring content.',
+      'Experienced in using HTML5 for modern web development.',
+    ],
+  },
+  {
+    name: 'CSS',
+    description: [
+      'Experienced in styling web pages with CSS.',
+      'Proficient in responsive design using Flexbox and Grid.',
+      'Worked with pre-processors like SASS to streamline styling processes.',
+    ],
+  },
+  {
+    name: 'Product Management',
+    description: [
+      'Experienced in product lifecycle management from ideation to deployment.',
+      'Skilled in defining product requirements and managing cross-functional teams.',
+      'Focused on delivering customer-centric solutions and iterating based on feedback.',
+    ],
+  },
+  {
+    name: 'DevOps',
+    description: [
+      'Familiar with DevOps practices including CI/CD pipelines.',
+      'Experienced with containerization using Docker.',
+      'Worked on cloud deployments and automated infrastructure management.',
+    ],
+  },
+  {
+    name: 'Data Engineering',
+    description: [
+      'Currently learning data engineering concepts.',
+      'Focused on ETL pipelines, data processing, and big data technologies.',
+      'Building expertise in tools like Apache Kafka, Hadoop, and Spark.',
+    ],
+  },
+];
+
+export default skills;

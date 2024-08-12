@@ -8,19 +8,19 @@ const projects = [
     },
 
     {
-      name: 'ShowBooker',
+      name: 'Show Booker',
       description: 'An application to book tickets for shows and events.',
       link: 'https://github.com/yourusername/showbooker',
     },
 
     {
-      name: 'JobJungle',
+      name: 'Job Jungle',
       description: 'A platform to search and apply for jobs.',
       link: 'https://github.com/yourusername/jobjungle',
     },
 
     {
-      name: 'FramesByShikhar',
+      name: 'Frames By Shikhar',
       description: 'A portfolio showcasing photography frames.',
       link: 'https://github.com/yourusername/framesbyshikhar',
     },

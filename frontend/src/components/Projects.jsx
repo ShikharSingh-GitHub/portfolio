@@ -3,6 +3,15 @@
 import React from 'react';
 import projects from '../projectsData';
 
+const generatePastelColor = (name) => {
+  let hash = 0;
+  for (let i = 0; i < name.length; i++) {
+    hash = name.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  const hue = hash % 360;
+  return `hsl(${hue}, 100%, 85%)`; // HSL with 100% saturation and 85% lightness for pastel colors
+};
+
 const Projects = () => {
   return (
     <section id="projects" style={styles.section}>
@@ -10,10 +19,23 @@ const Projects = () => {
         <h2 style={styles.heading}>Projects</h2>
         <div style={styles.projectsGrid}>
           {projects.map((project, index) => (
-            <div key={index} style={styles.card}>
-              <h3 style={styles.cardTitle}>{project.name}</h3>
-              <p style={styles.cardDescription}>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer" style={styles.cardLink}>
+            <div
+              key={index}
+              style={{
+                ...styles.card,
+                backgroundColor: generatePastelColor(project.name),
+              }}
+            >
+              <div style={styles.cardContent}>
+                <h3 style={styles.cardTitle}>{project.name}</h3>
+                <p style={styles.cardDescription}>{project.description}</p>
+              </div>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={styles.cardLink}
+              >
                 View Project
               </a>
             </div>
@@ -26,18 +48,20 @@ const Projects = () => {
 
 const styles = {
   section: {
-    padding: '50px 0',
-    textAlign: 'center',
-    backgroundColor: '#f4f4f4',
+    padding: '60px 0',
+    backgroundColor: '#f9f9f9',
   },
   container: {
     width: '90%',
+    maxWidth: '1200px',
     margin: '0 auto',
   },
   heading: {
-    marginBottom: '40px',
     fontSize: '2.5rem',
     color: '#333',
+    textAlign: 'center',
+    marginBottom: '40px',
+    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
   },
   projectsGrid: {
     display: 'grid',
@@ -45,20 +69,30 @@ const styles = {
     gap: '20px',
   },
   card: {
-    backgroundColor: '#fff',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
     padding: '20px',
     borderRadius: '8px',
-    boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    transition: 'transform 0.3s, box-shadow 0.3s',
+    cursor: 'pointer',
+  },
+  cardContent: {
+    flexGrow: 1,
   },
   cardTitle: {
-    fontSize: '1.5rem',
+    fontSize: '1.8rem',
     marginBottom: '10px',
     color: '#333',
+    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
   },
   cardDescription: {
-    fontSize: '1rem',
+    fontSize: '1.1rem',
     marginBottom: '15px',
     color: '#666',
+    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    lineHeight: '1.5',
   },
   cardLink: {
     textDecoration: 'none',
@@ -66,6 +100,13 @@ const styles = {
     backgroundColor: '#333',
     padding: '10px 15px',
     borderRadius: '5px',
+    textAlign: 'center',
+    marginTop: '20px',
+    transition: 'background-color 0.3s',
+    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+  },
+  cardLinkHover: {
+    backgroundColor: '#555',
   },
 };
 
