@@ -28,7 +28,7 @@ const projects = [
     },
     {
       name: 'DiceRoller',
-      description: 'A simple app to simulate dice rolls.',
+      description: 'Click the Button to Roll and generate a random no. on the Dice(s)',
       link: 'https://github.com/yourusername/diceroller',
     },
     {
