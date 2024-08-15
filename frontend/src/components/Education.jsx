@@ -11,8 +11,8 @@ const Education = () => {
         <div style={styles.educationList}>
           {education.map((edu, index) => (
             <div key={index} style={styles.card}>
-              <h3 style={styles.cardTitle}>{edu.degree}</h3>
-              <h4 style={styles.cardInstitution}>{edu.institution}</h4>
+              <h3 style={styles.cardInstitution}>{edu.institution}</h3>
+              <h1 style={styles.cardCourse}>{edu.course}</h1>
               <p style={styles.cardYear}>{edu.year}</p>
               <p style={styles.cardDescription}>{edu.description}</p>
             </div>
@@ -49,10 +49,11 @@ const styles = {
     borderRadius: '8px',
     boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
   },
-  cardTitle: {
-    fontSize: '1.5rem',
+  cardCourse: {
+    fontSize: '1rem',
     marginBottom: '10px',
     color: '#333',
+    fontStyle:'italic',
   },
   cardInstitution: {
     fontSize: '1.25rem',

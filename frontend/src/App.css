@@ -1,0 +1,41 @@
+/* Global Section Style for Transitions */
+section {
+    padding: 60px 0;
+    position: relative;
+  }
+  
+  /* About Section Background */
+  #about {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, hsla(204, 72%, 68%, 0.2) 50%, rgba(255,255,255,1) 100%);
+  }
+  
+  /* Projects Section Background */
+  #projects {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, hsla(204, 72%, 68%, 0.2) 50%, rgba(255,255,255,1) 100%);
+  }
+  
+  /* Skills Section Background */
+  #skills {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, hsla(204, 72%, 68%, 0.2) 50%, rgba(255,255,255,1) 100%);
+  }
+  
+  /* Education Section Background */
+  #education {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, hsla(204, 72%, 68%, 0.2) 50%, rgba(255,255,255,1) 100%);
+  }
+  
+  /* Hobbies Section Background */
+  #hobbies {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, hsla(204, 72%, 68%, 0.2) 50%, rgba(255,255,255,1) 100%);
+  }
+  
+  /* Resume Section Background */
+  #resume {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, hsla(204, 72%, 68%, 0.2) 50%, rgba(255,255,255,1) 100%);
+  }
+  
+  /* Contact Section Background */
+  #contact {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%,hsla(204, 72%, 68%, 0.2) 50%, rgba(255,255,255,1) 100%);
+  }
+  

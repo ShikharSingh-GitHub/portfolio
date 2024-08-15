@@ -31,6 +31,12 @@ const education = [
       year: '2010 - 2011',
       description: 'Completed secondary education with a focus on foundational subjects including Mathematics and Science.',
     },
+    {
+      course: 'Primary Education',
+      institution: 'Kendriya Vidyalaya, Indore',
+      year: '2003 - 2010',
+      description: 'Completed Primary education with a Lot of Co-Curricular Activities Such as Cubs and Bulbul, Sports, Music, Arts, Science Quizzes, General knowledge Quizzes etc.',
+    },
   ];
   
   export default education;
