@@ -1,9 +1,4 @@
-/* Global Section Style for Transitions */
-section {
-    padding: 60px 0;
-    position: relative;
-  }
-  
+
   /* About Section Background */
   #about {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, hsla(204, 72%, 68%, 0.2) 50%, rgba(255,255,255,1) 100%);
