@@ -68,7 +68,7 @@ const projects = [
 
     {
       name: 'Calculator',
-      description: 'A basic calculator for arithmetic operations.',
+      description: 'A super basic calculator for arithmetic operations (and it dosent understand the nuisance of binary operations).',
       link: 'https://shikharsingh-github.github.io/basic-calculator/',
     },
 

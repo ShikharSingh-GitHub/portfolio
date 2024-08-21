@@ -3,5 +3,5 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/', // This sets the correct base path for GitHub Pages
+  base: '/', // This sets the correct base path for GitHub Pages
 });
