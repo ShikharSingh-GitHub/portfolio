@@ -3,6 +3,7 @@
 const skills = [
   {
     name: 'React',
+    status:'active',
     description: [
       'Component based Architecture',
       'Virtual DOM',
@@ -17,6 +18,7 @@ const skills = [
   },
   {
     name: 'NodeJS',
+    status:'active',
     description: [
       'Node.js Core Modules',
       'Node.js Package Management',
@@ -35,6 +37,7 @@ const skills = [
   },
   {
     name: 'ExpressJS',
+    status:'active',
     description: [
       'Creating a Basic Express.js Server',
       'Routing in Express.js',
@@ -52,6 +55,7 @@ const skills = [
   },
   {
     name: 'MongoDB',
+    status:'active',
     description: [
       'Setting Up MongoDB',
       'MongoDB Data Model',
@@ -69,6 +73,7 @@ const skills = [
   },
   {
     name: 'JavaScript',
+    status:'active',
     description: [
       'Scope and Hoisting',
       'Closures',
@@ -88,6 +93,7 @@ const skills = [
   },
   {
     name: 'Redux',
+    status:'active',
     description: [
       'Expert in state management with Redux.',
       'Structured large-scale applications to manage complex state.',
@@ -96,6 +102,7 @@ const skills = [
   },
   {
     name: 'Thunk',
+    status:'inactive',
     description: [
       'Adept at handling asynchronous actions in Redux applications using Thunk.',
       'Improved data flow management and user experience.',
@@ -104,6 +111,7 @@ const skills = [
   },
   {
     name: 'Git',
+    status:'active',
     description: [
       'Proficient in version control using Git.',
       'Managed codebases and collaborated with teams efficiently.',
@@ -112,6 +120,7 @@ const skills = [
   },
   {
     name: 'DSA',
+    status:'active',
     description: [
       'Arrays',
       'Linked Lists',
@@ -136,6 +145,7 @@ const skills = [
   },
   {
     name: 'LLD',
+    status:'active',
     description: [
       'Knowledgeable in designing scalable and maintainable software components.',
       'Created detailed class diagrams and applied design patterns effectively.',
@@ -144,6 +154,7 @@ const skills = [
   },
   {
     name: 'HLD',
+    status:'inactive',
     description: [
       'Proficient in creating architectural blueprints for complex systems.',
       'Ensured performance, scalability, and reliability in system design.',
@@ -152,6 +163,7 @@ const skills = [
   },
   {
     name: 'SQL',
+    status:'active',
     description: [
       'Experienced in writing and optimizing SQL queries.',
       'Designed and normalized relational databases for efficient data management.',
@@ -160,6 +172,7 @@ const skills = [
   },
   {
     name: 'HTML',
+    status:'active',
     description: [
       'Skilled in crafting semantic and accessible web pages using HTML.',
       'Strong understanding of web standards and best practices for structuring content.',
@@ -168,6 +181,7 @@ const skills = [
   },
   {
     name: 'CSS',
+    status:'active',
     description: [
       'Experienced in styling web pages with CSS.',
       'Proficient in responsive design using Flexbox and Grid.',
@@ -176,6 +190,7 @@ const skills = [
   },
   {
     name: 'Product Management',
+    status:'inactive',
     description: [
       'Experienced in product lifecycle management from ideation to deployment.',
       'Skilled in defining product requirements and managing cross-functional teams.',
@@ -184,6 +199,7 @@ const skills = [
   },
   {
     name: 'DevOps',
+    status:'inactive',
     description: [
       'Familiar with DevOps practices including CI/CD pipelines.',
       'Experienced with containerization using Docker.',
@@ -192,6 +208,7 @@ const skills = [
   },
   {
     name: 'Data Engineering',
+    status:'inactive',
     description: [
       'Currently learning data engineering concepts.',
       'Focused on ETL pipelines, data processing, and big data technologies.',

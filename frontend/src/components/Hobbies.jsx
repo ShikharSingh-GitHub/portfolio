@@ -1,5 +1,3 @@
-// src/components/Hobbies.jsx
-
 import React from 'react';
 import hobbies from '../hobbiesData';
 
@@ -13,9 +11,12 @@ const Hobbies = () => {
             <div key={index} style={styles.card}>
               <h3 style={styles.cardTitle}>{hobby.name}</h3>
               <p style={styles.cardDescription}>{hobby.description}</p>
-              <a href={hobby.link} target="_blank" rel="noopener noreferrer" style={styles.cardLink}>
-                View
-              </a>
+              {/* Conditionally render the button if the hobby has a link */}
+              {hobby.link && (
+                <a href={hobby.link} target="_blank" rel="noopener noreferrer" style={styles.cardLink}>
+                  View
+                </a>
+              )}
             </div>
           ))}
         </div>

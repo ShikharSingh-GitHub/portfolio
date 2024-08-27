@@ -1,5 +1,3 @@
-// src/components/Projects.jsx
-
 import React from 'react';
 import projects from '../projectsData';
 
@@ -23,7 +21,8 @@ const Projects = () => {
               key={index}
               style={{
                 ...styles.card,
-                backgroundColor: generatePastelColor(project.name),
+                backgroundColor: project.status === 'inactive' ? '#d3d3d3' : generatePastelColor(project.name),
+                opacity: project.status === 'inactive' ? 0.6 : 1,
               }}
             >
               <div style={styles.cardContent}>
@@ -31,12 +30,16 @@ const Projects = () => {
                 <p style={styles.cardDescription}>{project.description}</p>
               </div>
               <a
-                href={project.link}
-                target="_blank"
+                href={project.status === 'inactive' ? null : project.link}
+                target={project.status === 'inactive' ? '' : '_blank'}
                 rel="noopener noreferrer"
-                style={styles.cardLink}
+                style={{
+                  ...styles.cardLink,
+                  pointerEvents: project.status === 'inactive' ? 'none' : 'auto',
+                  backgroundColor: project.status === 'inactive' ? '#ccc' : '#333',
+                }}
               >
-                View Project
+                {project.status === 'inactive' ? 'Inactive' : 'View Project'}
               </a>
             </div>
           ))}
@@ -104,9 +107,6 @@ const styles = {
     marginTop: '20px',
     transition: 'background-color 0.3s',
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-  },
-  cardLinkHover: {
-    backgroundColor: '#555',
   },
 };
 

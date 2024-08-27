@@ -1,5 +1,3 @@
-// src/components/Skills.jsx
-
 import React, { useState } from 'react';
 import skills from '../skillsData';
 
@@ -36,12 +34,14 @@ const Skills = () => {
               key={index}
               style={{
                 ...styles.card,
-                backgroundColor: skillColors[skill.name] || '#f4f4f4',
+                backgroundColor: skill.status === 'inactive' ? '#d3d3d3' : skillColors[skill.name] || '#f4f4f4',
+                opacity: skill.status === 'inactive' ? 0.6 : 1,
                 height: hoveredSkill === index ? 'auto' : '150px',
-                transform: hoveredSkill === index ? 'scale(1.05)' : 'scale(1)', // Scale for horizontal and vertical expansion
+                transform: hoveredSkill === index ? 'scale(1.05)' : 'scale(1)', 
               }}
-              onMouseEnter={() => setHoveredSkill(index)}
-              onMouseLeave={() => setHoveredSkill(null)}
+              // Only enable hover effects if the skill is active
+              onMouseEnter={skill.status === 'inactive' ? null : () => setHoveredSkill(index)}
+              onMouseLeave={skill.status === 'inactive' ? null : () => setHoveredSkill(null)}
             >
               <h3
                 style={{
@@ -103,7 +103,7 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '150px', // Default height when not hovered
+    height: '150px',
   },
   cardTitle: {
     fontSize: '1.8rem',
@@ -123,12 +123,12 @@ const styles = {
     textAlign: 'left',
     transition: 'opacity 0.3s',
     lineHeight: '1.5',
-    padding: '0 20px', 
-    listStyleType: 'disc', 
-    paddingLeft: '20px', 
+    padding: '0 20px',
+    listStyleType: 'disc',
+    paddingLeft: '20px',
   },
   bulletPoint: {
-    marginBottom: '10px', 
+    marginBottom: '10px',
   },
 };
 
