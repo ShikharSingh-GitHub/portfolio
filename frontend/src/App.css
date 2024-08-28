@@ -1,5 +1,37 @@
 
-  /* About Section Background */
+
+/* Global Container Styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Typography */
+h1 {
+  font-size: 4vw;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+
+/* About Section Background */
   #about {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, hsla(204, 72%, 68%, 0.2) 50%, rgba(255,255,255,1) 100%);
   }
