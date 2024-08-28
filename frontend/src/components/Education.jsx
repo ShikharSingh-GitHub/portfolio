@@ -37,6 +37,7 @@ const styles = {
     marginBottom: '40px',
     fontSize: '2.5rem',
     color: '#333',
+    fontfamily: 'Roboto',
   },
   educationList: {
     display: 'grid',
@@ -48,6 +49,7 @@ const styles = {
     padding: '20px',
     borderRadius: '8px',
     boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+    fontFamily: "'Roboto', sans-serif"
   },
   cardCourse: {
     fontSize: '1rem',

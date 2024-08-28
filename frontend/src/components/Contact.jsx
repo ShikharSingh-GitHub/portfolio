@@ -13,7 +13,6 @@ const Contact = () => {
         <div style={styles.contactInfo}>
           <p>Email: <a href="mailto:shikharsingh024@gmail.com" style={styles.link}>shikharsingh024@gmail.com</a></p>
           <p>Phone: <a href="tel:+917869782173" style={styles.link}>+91-7869782173</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/-shikhar-singh/" target="_blank" rel="noopener noreferrer" style={styles.link}>View Profile</a></p>
           <p>OR simply send me a message below and i will get back to you</p>
         </div>
         <form 
@@ -55,6 +54,9 @@ const Contact = () => {
 };
 
 const styles = {
+  body:{
+    fontFamily: "'Roboto', sans-serif",
+  },
   section: {
     padding: '50px 0',
     textAlign: 'center',
@@ -68,12 +70,14 @@ const styles = {
     marginBottom: '20px',
     fontSize: '2.5rem',
     color: '#333',
+    fontFamily: "'Roboto', sans-serif"
   },
   description: {
     fontSize: '1.1rem',
     color: '#666',
     lineHeight: '1.6',
     marginBottom: '30px',
+    fontFamily: "'Roboto', sans-serif"
   },
   contactInfo: {
     marginBottom: '40px',

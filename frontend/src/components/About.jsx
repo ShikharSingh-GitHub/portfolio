@@ -106,13 +106,14 @@ const styles = {
     fontSize: '2.5rem',
     color: '#333',
     marginBottom: '40px',
-    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    fontFamily: "'Roboto', sans-serif",
   },
   carouselContainer: {
     maxWidth: '1200px',
     margin: '0 auto',
     padding: '0 20px', // Padding to ensure equal space on both sides
     textAlign: 'center',
+    fontFamily: "'Roboto', sans-serif"
   },
   slide: {
     display: 'flex',
