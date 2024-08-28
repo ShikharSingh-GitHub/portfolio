@@ -102,7 +102,7 @@ const skills = [
   },
   {
     name: 'Thunk',
-    status:'inactive',
+    status:'active',
     description: [
       'Adept at handling asynchronous actions in Redux applications using Thunk.',
       'Improved data flow management and user experience.',
@@ -154,7 +154,7 @@ const skills = [
   },
   {
     name: 'HLD',
-    status:'inactive',
+    status:'active',
     description: [
       'Proficient in creating architectural blueprints for complex systems.',
       'Ensured performance, scalability, and reliability in system design.',
@@ -190,7 +190,7 @@ const skills = [
   },
   {
     name: 'Product Management',
-    status:'inactive',
+    status:'active',
     description: [
       'Experienced in product lifecycle management from ideation to deployment.',
       'Skilled in defining product requirements and managing cross-functional teams.',
@@ -199,7 +199,7 @@ const skills = [
   },
   {
     name: 'DevOps',
-    status:'inactive',
+    status:'active',
     description: [
       'Familiar with DevOps practices including CI/CD pipelines.',
       'Experienced with containerization using Docker.',
@@ -208,7 +208,7 @@ const skills = [
   },
   {
     name: 'Data Engineering',
-    status:'inactive',
+    status:'active',
     description: [
       'Currently learning data engineering concepts.',
       'Focused on ETL pipelines, data processing, and big data technologies.',
