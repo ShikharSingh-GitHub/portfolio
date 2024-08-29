@@ -11,8 +11,13 @@ const Contact = () => {
           I'd love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out.
         </p>
         <div style={styles.contactInfo}>
-          <p>Email: <a href="mailto:shikharsingh024@gmail.com" style={styles.link}>shikharsingh024@gmail.com</a></p>
-          <p>Phone: <a href="tel:+917869782173" style={styles.link}>+91-7869782173</a></p>
+        <p style={{ color: '#666' }}>
+  Email: <a href="mailto:shikharsingh024@gmail.com" style={styles.link}>shikharsingh024@gmail.com</a>
+</p>
+<p style={{ color: '#666' }}>
+  Phone: <a href="tel:+917869782173" style={styles.link}>+91-7869782173</a>
+</p>
+
         </div>
         <form 
           action="https://formspree.io/f/xpwarrlp" 
@@ -73,10 +78,10 @@ const styles = {
   },
   description: {
     fontSize: '1.1rem',
-    color: '#666',
     lineHeight: '1.6',
     marginBottom: '30px',
-    fontFamily: "'Roboto', sans-serif"
+    fontFamily: "'Roboto', sans-serif",
+    color: '#3339',
   },
   contactInfo: {
     marginBottom: '40px',
