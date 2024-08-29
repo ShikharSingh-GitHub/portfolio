@@ -12,17 +12,17 @@ const About = () => {
     {
       text: "I am a passionate Fullstack Developer with a strong foundation in both front-end and back-end technologies. My expertise lies in creating seamless user experiences by leveraging modern web development frameworks.",
       backgroundColor: '#3498db',
-      imageUrl: '/images/profile_pic.jpeg',
+      imageUrl: '/images/profile_pic1.jpeg',
     },
     {
       text: "With a background in computer science, I have honed my skills in problem-solving and critical thinking, which enables me to tackle complex challenges efficiently. My goal is to build web applications that are not only functional but also scalable and maintainable.",
       backgroundColor: '#2ecc71',
-      imageUrl: '/images/profile_pic.jpeg',
+      imageUrl: '/images/profile_pic2.jpeg',
     },
     {
       text: "I am constantly learning and adapting to new technologies to stay ahead in the rapidly evolving tech landscape. I thrive in collaborative environments and enjoy working with cross-functional teams to deliver high-quality products.",
       backgroundColor: '#e74c3c',
-      imageUrl: '/images/profile_pic.jpeg',
+      imageUrl: '/images/profile_pic3.jpeg',
     }
   ];
 
@@ -179,3 +179,4 @@ const styles = {
 };
 
 export default About;
+
