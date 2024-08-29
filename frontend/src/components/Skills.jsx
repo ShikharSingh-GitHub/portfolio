@@ -83,8 +83,7 @@ const styles = {
     fontSize: '2.5rem',
     color: '#333',
     textAlign: 'center',
-    marginBottom: '40px',
-    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    marginBottom: '40px'
   },
   skillsGrid: {
     display: 'grid',
@@ -108,7 +107,6 @@ const styles = {
   cardTitle: {
     fontSize: '1.8rem',
     color: '#fff',
-    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
     transition: 'opacity 0.3s',
     position: 'absolute',
     top: '50%',
@@ -119,7 +117,6 @@ const styles = {
   cardDescription: {
     fontSize: '1rem',
     color: '#fff',
-    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
     textAlign: 'left',
     transition: 'opacity 0.3s',
     lineHeight: '1.5',

@@ -26,13 +26,6 @@ const skills = [
       'Building Web Servers',
       'Express.js Framework',
       'Interacting with Databases',
-      'Real-Time Applications with Socket.io',
-      'Authentication and Authorization',
-      'File Handling and Streams',
-      'Testing in Node.js',
-      'Deploying Node.js Applications',
-      'Node.js Security Best Practices'
-
     ],
   },
   {
@@ -47,10 +40,6 @@ const skills = [
       'Building RESTful APIs',
       'Working with Databases',
       'Authentication and Authorization',
-      'Error Handling in Express.js',
-      'Real-Time Applications with Express.js',
-      'Express.js Security Best Practices'
-
     ],
   },
   {
@@ -80,12 +69,10 @@ const skills = [
       'Callbacks',
       'Promises',
       'Async/Await',
-      'Event Loop and Concurrency Model',
       'DOM Manipulation',
       'Event Handling',
       'Modules (import/export)',
       'Higher-Order Functions',
-      'Map, Filter, Reduce',
       'Working with APIs',
       'Event Delegation',
       'Debouncing and Throttling'
