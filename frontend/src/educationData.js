@@ -21,19 +21,19 @@ const education = [
     },
     {
       course: 'Higher Secondary Education (12th Grade)',
-      institution: 'Kendriya Vidyalaya, Indore',
+      institution: 'Kendriya Vidyalaya No. 1, Indore',
       year: '2012 - 2013',
       description: 'Specialized in Mathematics, Physics, Chemistry and Computer Science. Developed a strong foundation in logical reasoning and problem-solving skills.',
     },
     {
       course: 'Secondary Education (10th Grade)',
-      institution: 'Kendriya Vidyalaya, Indore',
+      institution: 'Kendriya Vidyalaya No. 1, Indore',
       year: '2010 - 2011',
       description: 'Completed secondary education with a focus on foundational subjects including Mathematics and Science.',
     },
     {
       course: 'Primary Education',
-      institution: 'Kendriya Vidyalaya, Indore',
+      institution: 'Kendriya Vidyalaya No. 1, Indore',
       year: '2003 - 2010',
       description: 'Completed Primary education with a Lot of Co-Curricular Activities Such as Cubs and Bulbul, Sports, Music, Arts, Science Quizzes, General knowledge Quizzes etc.',
     },

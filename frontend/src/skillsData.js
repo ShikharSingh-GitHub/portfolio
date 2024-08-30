@@ -46,7 +46,6 @@ const skills = [
     name: 'MongoDB',
     status:'active',
     description: [
-      'Setting Up MongoDB',
       'MongoDB Data Model',
       'CRUD Operations in MongoDB',
       'Querying Data',
