@@ -54,13 +54,13 @@ const styles = {
   cardCourse: {
     fontSize: '1rem',
     marginBottom: '10px',
-    color: '#333',
+    color: '#6082B6',
     fontStyle:'italic',
   },
   cardInstitution: {
     fontSize: '1.25rem',
     marginBottom: '10px',
-    color: '#555',
+    color: '#0047AB',
   },
   cardYear: {
     fontSize: '1rem',

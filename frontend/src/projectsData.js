@@ -3,42 +3,42 @@
 const projects = [
     {
       name: 'Online Result System',
-      status:'inactive',
+      status:'active',
       description: 'A system to manage and display student results online.',
       link: 'https://github.com/yourusername/online-result-system', // Replace with actual link
     },
 
     {
       name: 'Show Booker',
-      status:'inactive',
+      status:'active',
       description: 'An application to book tickets for shows and events.',
       link: 'https://github.com/yourusername/showbooker',
     },
 
-    {
+    /*{
       name: 'Job Jungle',
       status:'inactive',
       description: 'A platform to search and apply for jobs.',
       link: 'https://github.com/yourusername/jobjungle',
-    },
+    },*/
 
     {
       name: 'Frames By Shikhar',
-      status:'inactive',
+      status:'active',
       description: 'A portfolio showcasing photography frames.',
       link: 'https://github.com/yourusername/framesbyshikhar',
     },
 
     {
       name: 'Taskify',
-      status:'inactive',
+      status:'active',
       description: 'A task management app to organize and prioritize your tasks.',
       link: 'https://github.com/yourusername/taskify',
     },
 
     {
       name: 'Weather App',
-      status:'inactive',
+      status:'active',
       description: 'An app that provides current weather information for any location.',
       link: 'https://github.com/yourusername/weather-app',
     },
