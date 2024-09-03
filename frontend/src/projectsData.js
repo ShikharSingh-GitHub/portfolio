@@ -40,7 +40,7 @@ const projects = [
       name: 'Weather App',
       status:'active',
       description: 'An app that provides current weather information for any location.',
-      link: 'https://github.com/yourusername/weather-app',
+      link: 'https://shikharsingh-github.github.io/weatherApp/',
     },
     
     {
