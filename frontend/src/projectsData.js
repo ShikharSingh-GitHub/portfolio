@@ -33,7 +33,7 @@ const projects = [
       name: 'Taskify',
       status:'active',
       description: 'A task management app to organize and prioritize your tasks.',
-      link: 'https://github.com/yourusername/taskify',
+      link: 'https://kanban-frontend-pi.vercel.app',
     },
 
     {
