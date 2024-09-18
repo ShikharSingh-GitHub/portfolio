@@ -11,7 +11,7 @@ const Resume = () => {
           Although My Portfolio Website is itself a Comprehensive Resume, you can download the single page pdf version down below.
         </p>
         <a 
-          href="https://drive.google.com/file/d/1BtaHrn1NgxfP-sfWzmpkf-c02Z0E4U32/view?usp=sharing" 
+          href="https://drive.google.com/file/d/1xneQAgKq-uMXIKqAFiMwUOCOUbn8kc0k/view?usp=sharing" 
           target="_blank" 
           rel="noopener noreferrer" 
           style={styles.downloadLink}>
