@@ -1,0 +1,118 @@
+/* Main section styling */
+.projects-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif; /* Matching font */
+}
+
+/* Projects Grid */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust cards based on available space */
+  gap: 20px; /* Space between the cards */
+  justify-items: center; /* Center the cards in each grid space */
+}
+
+/* Individual Card Styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%; /* Ensure the card fills the available grid space */
+  max-width: 300px; /* Limit the card's maximum width */
+  height: auto; /* Ensure the card grows with its content */
+  background-color: #ffffff; /* Consistent white background */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Title */
+.cardTitle {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+/* Card Description */
+.cardDescription {
+  text-align:center;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #666;
+  font-family: 'Roboto', sans-serif; /* Consistent font */
+  line-height: 1.5;
+  flex-grow: 1; /* Ensures the description takes up remaining space */
+}
+
+/* Link Button Styling */
+.cardLink {
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cardLink:hover {
+  background-color: #555;
+}
+
+/* Inactive project card and link */
+.card[style*="opacity: 0.6"] .cardLink {
+  background-color: #ccc;
+  pointer-events: none;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+  }
+
+  .card {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .cardTitle {
+    font-size: 1.5rem;
+  }
+
+  .cardDescription {
+    font-size: 1rem;
+  }
+
+  .cardLink {
+    padding: 8px 15px;
+  }
+}

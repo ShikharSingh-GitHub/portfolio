@@ -1,0 +1,123 @@
+/* Main Section Styling */
+.hobbies-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.hobbies-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hobbies-heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hobbies Grid - 3 Cards per Row */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 15px; /* Reduced gap between cards */
+  justify-items: center;
+}
+
+/* Individual Card Styling */
+.hobbies-card {
+  background-color: #fff;
+  padding: 15px; /* Reduced padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures all items stay aligned */
+  min-height: 260px; /* Keeps cards uniform in size */
+}
+
+.hobbies-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Title */
+.hobbies-cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Description */
+.hobbies-cardDescription {
+  font-size: 1rem;
+  color: #666;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  flex-grow: 1; /* Pushes content up so the button is aligned at the bottom */
+}
+
+/* View Button Link */
+.hobbies-cardLink {
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.hobbies-cardLink:hover {
+  background-color: #555;
+}
+
+/* Coming Soon Button */
+.hobbies-comingSoon {
+  padding: 8px 12px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+  text-align: center;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 1024px) {
+  .hobbies-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .hobbies-grid {
+      grid-template-columns: 1fr; /* Stack cards on mobile */
+  }
+
+  .hobbies-heading {
+      font-size: 2rem;
+  }
+
+  .hobbies-card {
+      padding: 12px; /* Reduced padding for smaller screens */
+  }
+
+  .hobbies-cardTitle {
+      font-size: 1.3rem;
+  }
+
+  .hobbies-cardDescription {
+      font-size: 0.9rem;
+  }
+
+  .hobbies-cardLink,
+  .hobbies-comingSoon {
+      padding: 7px 10px;
+  }
+}

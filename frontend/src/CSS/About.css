@@ -1,0 +1,126 @@
+/* About Section Styling */
+.about-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  border-radius: 8px;
+  transition: opacity 0.5s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+}
+
+.fade {
+  opacity: 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.text {
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.5;
+  padding-left: 20px;
+  flex: 1;
+  text-align: left;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 220px;
+    margin-bottom: 15px;
+  }
+
+  .text {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,55 @@
+/* Main Section Styling */
+.resume-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.resume-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resume-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.resume-downloadLink {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-downloadLink:hover {
+    background-color: #444;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .resume-heading {
+        font-size: 2rem;
+    }
+
+    .resume-description {
+        font-size: 1rem;
+    }
+
+    .resume-downloadLink {
+        padding: 8px 15px;
+    }
+}

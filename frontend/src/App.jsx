@@ -1,5 +1,3 @@
-// src/App.jsx
-
 import React from 'react';
 import './App.css';
 import About from './components/About';
@@ -15,15 +13,21 @@ import Skills from './components/Skills';
 const App = () => {
   return (
     <div>
-      <Header />
-      <About />
-      <Skills />
-      <Projects />
-      <Education />
-      <Hobbies />
-      <Contact />
-      <Resume />
-      <Footer/>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+        <Hobbies />
+        <Contact />
+        <Resume />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

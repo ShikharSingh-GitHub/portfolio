@@ -1,54 +1,25 @@
-// src/components/Resume.jsx
-
 import React from 'react';
+import '../CSS/Resume.css'; // Import external CSS file
 
 const Resume = () => {
   return (
-    <section id="resume" style={styles.section}>
-      <div style={styles.container}>
-        <h2 style={styles.heading}>Resume</h2>
-        <p style={styles.description}>
-          Although My Portfolio Website is itself a Comprehensive Resume, you can download the single page pdf version down below.
+    <section id="resume" className="resume-section section">
+      <div className="resume-container">
+        <h2 className="resume-heading">RESUME</h2>
+        <p className="resume-description">
+          Although My Portfolio Website is itself a Comprehensive Resume, you can download the single-page PDF version down below.
         </p>
-        <a 
-          href="https://drive.google.com/file/d/1xneQAgKq-uMXIKqAFiMwUOCOUbn8kc0k/view?usp=sharing" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          style={styles.downloadLink}>
+        <a
+          href="https://drive.google.com/file/d/1xneQAgKq-uMXIKqAFiMwUOCOUbn8kc0k/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resume-downloadLink"
+        >
           Download Resume
         </a>
       </div>
     </section>
   );
-};
-
-const styles = {
-  section: {
-    padding: '50px 0',
-    textAlign: 'center',
-    backgroundColor: '#f4f4f4',
-  },
-  container: {
-    width: '90%',
-    margin: '0 auto',
-  },
-  heading: {
-    marginBottom: '20px',
-    fontSize: '2.5rem',
-    color: '#333',
-  },
-  description: {
-    fontSize: '1rem',
-    color: '#666',
-    marginBottom: '30px',
-  },
-  downloadLink: {
-    textDecoration: 'none',
-    color: '#fff',
-    backgroundColor: '#333',
-    padding: '10px 20px',
-    borderRadius: '5px',
-  },
 };
 
 export default Resume;

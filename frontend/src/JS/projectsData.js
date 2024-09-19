@@ -1,16 +1,16 @@
 // src/projectsData.js
 
 const projects = [
-    /*{
+    {
       name: 'Online Result System',
-      status:'active',
+      status:'inactive',
       description: 'A system to manage and display student results online.',
       link: 'https://github.com/yourusername/online-result-system', // Replace with actual link
     },
 
     {
       name: 'Show Booker',
-      status:'active',
+      status:'inactive',
       description: 'An application to book tickets for shows and events.',
       link: 'https://github.com/yourusername/showbooker',
     },
@@ -27,7 +27,7 @@ const projects = [
       status:'inactive',
       description: 'A portfolio showcasing photography frames.',
       link: 'https://github.com/yourusername/framesbyshikhar',
-    },*/
+    },
 
     {
       name: 'Taskify',

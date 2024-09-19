@@ -1,0 +1,126 @@
+/* Main Section Styling */
+.skills-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.skills-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skills-heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Individual Card Styling */
+.skills-card {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%; /* Set width to fill the grid space */
+  max-width: 300px;
+  height: 350px; /* Set a fixed height for uniformity */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease; /* Add height transition */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the title when unexpanded */
+  align-items: center; /* Center content horizontally */
+  overflow: hidden; /* Ensure nothing overflows */
+  position: relative;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  height: auto; /* Allow height to grow when expanded */
+  justify-content: flex-start; /* When expanded, align content to the top */
+}
+
+/* Card Title */
+.skills-cardTitle {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  transition: opacity 0.3s ease, height 0.3s ease;
+  margin-bottom: 0; /* Remove unnecessary margin */
+  display: flex;
+  justify-content: center; /* Align horizontally */
+  align-items: center; /* Align vertically */
+  height: 100%; /* Ensure title takes up space when card is unexpanded */
+}
+
+.skills-cardTitle.hidden {
+  opacity: 0; /* Fade out when the card is expanded */
+  height: 0; /* Hide title when expanded */
+  margin: 0;
+}
+
+/* Card Description */
+.skills-cardDescription {
+  font-size: 1rem;
+  color: #fff;
+  transition: opacity 0.3s ease, height 0.3s ease;
+  list-style-type: disc;
+  text-align: left;
+  line-height: 1.5;
+  opacity: 0;
+  overflow-y: auto; /* Allow scrolling if content exceeds available space */
+  height: 0; /* Set to 0 initially when card is unexpanded */
+  flex-grow: 1;
+}
+
+.skills-cardDescription.visible {
+  opacity: 1; /* Fade in when the card expands */
+  height: auto; /* Allow height to grow with content */
+  margin-top: 10px;
+}
+
+/* Bullet Point Styling */
+.skills-bulletPoint {
+  margin-bottom: 8px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 1024px) {
+  .skills-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+      grid-template-columns: 1fr; /* Stack cards on mobile */
+  }
+
+  .skills-heading {
+      font-size: 2rem;
+  }
+
+  .skills-card {
+      padding: 12px;
+      height: 300px; /* Adjust height for mobile */
+  }
+
+  .skills-cardTitle {
+      font-size: 1.3rem;
+  }
+
+  .skills-cardDescription {
+      font-size: 0.9rem;
+  }
+}

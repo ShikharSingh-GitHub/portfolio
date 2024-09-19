@@ -1,0 +1,109 @@
+/* Main Section Styling */
+.education-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.education-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.education-heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Education Grid */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 15px;
+  justify-items: center;
+}
+
+/* Individual Card Styling */
+.education-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 260px;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Institution Name */
+.education-cardInstitution {
+  font-size: 1.5rem;
+  color: #0047AB;
+  margin-bottom: 10px;
+}
+
+/* Card Course Name */
+.education-cardCourse {
+  font-size: 1.2rem;
+  color: #6082B6;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* Card Year */
+.education-cardYear {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Card Description */
+.education-cardDescription {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 1024px) {
+  .education-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .education-grid {
+      grid-template-columns: 1fr; /* Stack cards on mobile */
+  }
+
+  .education-heading {
+      font-size: 2rem;
+  }
+
+  .education-card {
+      padding: 12px;
+  }
+
+  .education-cardInstitution {
+      font-size: 1.3rem;
+  }
+
+  .education-cardCourse {
+      font-size: 1.1rem;
+  }
+
+  .education-cardYear,
+  .education-cardDescription {
+      font-size: 0.9rem;
+  }
+}

@@ -1,11 +1,14 @@
-// src/components/Header.jsx
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
+import logo from '../assets/logo.png';
+import '../CSS/Header.css'; // Import the external CSS file
 
 const Header = () => {
-  const [isVisible, setIsVisible] = useState(true);
-  const [isAtTop, setIsAtTop] = useState(true);
+  const [isVisible, setIsVisible] = useState(true); // Control navbar visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for hamburger menu
+  const [isAtTop, setIsAtTop] = useState(true); // Control if user is at the top of the page
+
+  const scrollThreshold = 50; // Set the scroll threshold
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -14,20 +17,25 @@ const Header = () => {
     const handleScroll = () => {
       clearTimeout(timeoutId);
 
-      if (window.scrollY > lastScrollY || window.scrollY > 0) {
+      // Hide the navbar when scrolling down beyond the threshold
+      if (window.scrollY - lastScrollY > scrollThreshold) {
         setIsVisible(false);
-      } else {
+      }
+      // Show the navbar when scrolling up beyond the threshold
+      else if (lastScrollY - window.scrollY > scrollThreshold) {
         setIsVisible(true);
       }
 
+      // Set the navbar visibility for when the user is at the top of the page
       if (window.scrollY > 0) {
-        setIsAtTop(false);
+        setIsAtTop(false); // User is not at the top
       } else {
-        setIsAtTop(true);
+        setIsAtTop(true); // User is at the top
       }
 
       lastScrollY = window.scrollY;
 
+      // Ensure the navbar becomes visible after scrolling stops for a bit
       timeoutId = setTimeout(() => {
         setIsVisible(true);
       }, 150);
@@ -41,52 +49,58 @@ const Header = () => {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle menu visibility
+  };
+
   return (
-    <header
-      style={{
-        ...styles.header,
-        transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
-        height: isAtTop ? '70px' : '50px',
-      }}
-    >
-      <div style={styles.container}>
-        <h1 style={{ ...styles.logo, fontSize: isAtTop ? '1.6rem' : '1.2rem' }}>
-          Shikhar Singh | Fullstack Developer
-        </h1>
-        <nav style={styles.nav}>
-          <ul style={styles.navList}>
-            <li style={styles.navItem}>
-              <Link to="about" smooth={true} duration={500} style={styles.navLink}>
+    <header className={`header-component ${isVisible ? 'visible' : 'hidden'}`}>
+      <div className="header-container">
+        <div className="header-logo-container">
+          <img src={logo} alt="Logo" className="header-logo-image" />
+          <h1 className="header-logo-text">Shikhar Singh | Fullstack Developer</h1>
+        </div>
+
+        {/* Hamburger Button for mobile */}
+        <button className="header-hamburger" onClick={toggleMenu}>
+          ☰
+        </button>
+
+        {/* Nav Links */}
+        <nav className={`header-nav ${isMenuOpen ? 'open' : ''}`}>
+          <ul className="header-nav-list">
+            <li className="header-nav-item">
+              <Link to="about" smooth={true} duration={500} className="header-nav-link" onClick={toggleMenu}>
                 About
               </Link>
             </li>
-            <li style={styles.navItem}>
-              <Link to="skills" smooth={true} duration={500} style={styles.navLink}>
+            <li className="header-nav-item">
+              <Link to="skills" smooth={true} duration={500} className="header-nav-link" onClick={toggleMenu}>
                 Skills
               </Link>
             </li>
-            <li style={styles.navItem}>
-              <Link to="projects" smooth={true} duration={500} style={styles.navLink}>
+            <li className="header-nav-item">
+              <Link to="projects" smooth={true} duration={500} className="header-nav-link" onClick={toggleMenu}>
                 Projects
               </Link>
             </li>
-            <li style={styles.navItem}>
-              <Link to="education" smooth={true} duration={500} style={styles.navLink}>
+            <li className="header-nav-item">
+              <Link to="education" smooth={true} duration={500} className="header-nav-link" onClick={toggleMenu}>
                 Education
               </Link>
             </li>
-            <li style={styles.navItem}>
-              <Link to="hobbies" smooth={true} duration={500} style={styles.navLink}>
+            <li className="header-nav-item">
+              <Link to="hobbies" smooth={true} duration={500} className="header-nav-link" onClick={toggleMenu}>
                 Hobbies
               </Link>
             </li>
-            <li style={styles.navItem}>
-              <Link to="contact" smooth={true} duration={500} style={styles.navLink}>
+            <li className="header-nav-item">
+              <Link to="contact" smooth={true} duration={500} className="header-nav-link" onClick={toggleMenu}>
                 Contact
               </Link>
             </li>
-            <li style={styles.navItem}>
-              <Link to="resume" smooth={true} duration={500} style={styles.navLink}>
+            <li className="header-nav-item">
+              <Link to="resume" smooth={true} duration={500} className="header-nav-link" onClick={toggleMenu}>
                 Resume
               </Link>
             </li>
@@ -95,58 +109,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
-
-const styles = {
-  header: {
-    width: '100%',
-    backgroundColor: '#2c3e50',
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    zIndex: 1000,
-    transition: 'transform 0.3s ease-in-out, height 0.3s ease-in-out',
-  },
-  container: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    width: '90%',
-    maxWidth: '1200px',
-    margin: '0 auto',
-    height: '100%',
-  },
-  logo: {
-    color: '#ecf0f1',
-    transition: 'font-size 0.3s ease-in-out',
-    fontWeight: 'normal',
-    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-  },
-  nav: {
-    display: 'flex',
-  },
-  navList: {
-    listStyle: 'none',
-    display: 'flex',
-    margin: 0,
-    padding: 0,
-  },
-  navItem: {
-    marginLeft: '20px',
-  },
-  navLink: {
-    color: '#ecf0f1',
-    fontSize: '1rem',
-    textDecoration: 'none',
-    fontWeight: 'normal',
-    padding: '5px 10px',
-    borderRadius: '5px',
-    transition: 'background-color 0.3s',
-    cursor: 'pointer', // Ensures the cursor changes to a pointer on hover
-  },
-  navLinkHover: {
-    backgroundColor: '#34495e',
-  },
 };
 
 export default Header;
