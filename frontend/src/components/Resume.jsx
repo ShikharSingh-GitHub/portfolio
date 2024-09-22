@@ -1,5 +1,5 @@
-import React from 'react';
-import '../CSS/Resume.css'; // Import external CSS file
+import React from "react";
+import "../CSS/Resume.css"; // Import external CSS file
 
 const Resume = () => {
   return (
@@ -7,14 +7,14 @@ const Resume = () => {
       <div className="resume-container">
         <h2 className="resume-heading">RESUME</h2>
         <p className="resume-description">
-          Although My Portfolio Website is itself a Comprehensive Resume, you can download the single-page PDF version down below.
+          Although My Portfolio Website is itself a Comprehensive Resume, you
+          can download the single-page PDF version down below.
         </p>
         <a
-          href="https://drive.google.com/file/d/1xneQAgKq-uMXIKqAFiMwUOCOUbn8kc0k/view?usp=sharing"
+          href="https://drive.google.com/file/d/1jAtkxZv4N5bjxGtUGJqDWd-6jSUY0nkH/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="resume-downloadLink"
-        >
+          className="resume-downloadLink">
           Download Resume
         </a>
       </div>
