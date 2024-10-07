@@ -11,7 +11,7 @@ const Resume = () => {
           can download the single-page PDF version down below.
         </p>
         <a
-          href="https://drive.google.com/file/d/1jAtkxZv4N5bjxGtUGJqDWd-6jSUY0nkH/view?usp=sharing"
+          href="https://drive.google.com/file/d/11z3ryHg64Hx-cxq_ASWsA13ftPkZJh2d/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="resume-downloadLink">
