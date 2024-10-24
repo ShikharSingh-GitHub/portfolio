@@ -8,13 +8,13 @@ const education = [
     description:
       "Focused on software development, data structures and algorithms. Gained experience in full-stack development.",
   },
-  {
+  /*{
     course: "Freelance Developer",
     institution: "Self-Employed",
     year: "2018 - 2022",
     description:
       "Provided freelancing and consulting services, focusing on web development.",
-  },
+  },*/
   {
     course: "Bachelor of Engineering in Information Technology",
     institution: "Medicaps Institute of Science and Technology, Indore",
